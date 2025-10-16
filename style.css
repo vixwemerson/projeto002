@@ -1,0 +1,159 @@
+/* Reset básico para remover margens e paddings padrão */ 
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho */ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+} 
+ 
+/* Estilos do corpo da página */ 
+body { 
+    background-color: #f5f5f5; /* Cor de fundo cinza claro */ 
+    color: #333; /* Cor do texto */ 
+    line-height: 1.6; /* Espaçamento entre linhas */ 
+    padding: 20px; /* Espaçamento interno */ 
+} 
+ 
+/* Container principal que centraliza o conteúdo */ 
+.container { 
+    max-width: 800px; /* Largura máxima */ 
+    margin: 0 auto; /* Centraliza horizontalmente */ 
+    background-color: white; /* Fundo branco */ 
+    padding: 30px; /* Espaçamento interno */ 
+    border-radius: 10px; /* Bordas arredondadas */ 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */ 
+} 
+ 
+/* Estilo do título principal */ 
+h1 { 
+    text-align: center; /* Centraliza o texto */ 
+color: #2c3e50; /* Cor azul escuro */ 
+margin-bottom: 30px; /* Espaço abaixo */ 
+border-bottom: 2px solid #eee; /* Linha inferior */ 
+padding-bottom: 10px; /* Espaço entre texto e linha */ 
+} 
+/* Estilo dos subtítulos */ 
+h2 { 
+color: #3498db; /* Cor azul */ 
+margin: 20px 0 15px; /* Margem: topo, laterais, inferior */ 
+} 
+/* Estilo dos grupos de formulário */ 
+.form-group { 
+margin-bottom: 15px; /* Espaço entre os grupos */ 
+} 
+/* Estilo das labels */ 
+label { 
+display: block; /* Faz ocupar toda a linha */ 
+margin-bottom: 5px; /* Espaço abaixo */ 
+font-weight: bold; /* Texto em negrito */ 
+} 
+/* Estilo dos inputs e selects */ 
+input, select { 
+width: 100%; /* Largura total */ 
+padding: 10px; /* Espaçamento interno */ 
+border: 1px solid #ddd; /* Borda cinza clara */ 
+border-radius: 5px; /* Bordas arredondadas */ 
+font-size: 16px; /* Tamanho da fonte */ 
+} 
+/* Estilo base dos botões */ 
+button { 
+background-color: #3498db; /* Cor azul */ 
+color: white; /* Texto branco */ 
+border: none; /* Remove borda padrão */ 
+padding: 10px 15px; /* Espaçamento interno */ 
+border-radius: 5px; /* Bordas arredondadas */ 
+cursor: pointer; /* Muda cursor para mão */ 
+font-size: 16px; /* Tamanho da fonte */ 
+transition: background-color 0.3s; /* Transição suave de cor */ 
+} 
+/* Efeito hover nos botões */ 
+button:hover { 
+background-color: #2980b9; /* Azul mais escuro no hover */ 
+} 
+/* Botão de alugar com cor diferente */ 
+button.alugar { 
+background-color: #2ecc71; /* Cor verde */ 
+} 
+/* Efeito hover no botão alugar */ 
+button.alugar:hover { 
+background-color: #27ae60; /* Verde mais escuro */ 
+} 
+/* Botão de devolver com cor diferente */ 
+button.devolver { 
+background-color: #e74c3c; /* Cor vermelha */ 
+} 
+/* Efeito hover no botão devolver */ 
+button.devolver:hover { 
+background-color: #c0392b; /* Vermelho mais escuro */ 
+} 
+/* Estilo da lista de livros */ 
+.book-list { 
+list-style: none; /* Remove marcadores da lista */ 
+margin-top: 20px; /* Espaço acima */ 
+} 
+/* Estilo de cada item da lista de livros */ 
+.book-item { 
+background-color: #f9f9f9; /* Fundo cinza muito claro */ 
+border: 1px solid #eee; /* Borda sutil */ 
+border-radius: 5px; /* Bordas arredondadas */ 
+padding: 15px; /* Espaçamento interno */ 
+margin-bottom: 10px; /* Espaço entre itens */ 
+display: flex; /* Usa flexbox para layout */ 
+justify-content: space-between; /* Espaço entre elementos */ 
+align-items: center; /* Alinha verticalmente ao centro */ 
+} 
+/* Área de informações do livro */ 
+.book-info { 
+f
+ lex-grow: 1; /* Ocupa todo espaço disponível */ 
+} 
+/* Estilo do título do livro */ 
+.book-title { 
+font-weight: bold; /* Texto em negrito */ 
+font-size: 18px; /* Tamanho maior */ 
+} 
+/* Estilo do autor do livro */ 
+.book-author { 
+color: #666; /* Cor cinza */ 
+} 
+/* Estilo do status do livro */ 
+.book-status { 
+font-weight: bold; /* Texto em negrito */ 
+margin-top: 5px; /* Espaço acima */ 
+} 
+/* Cor para status disponível */ 
+.disponivel { 
+color: #2ecc71; /* Verde */ 
+} 
+/* Cor para status alugado */ 
+.alugado { 
+color: #e74c3c; /* Vermelho */ 
+} 
+/* Container dos botões de ação */ 
+.actions { 
+display: flex; /* Usa flexbox para alinhar botões */ 
+gap: 10px; /* Espaço entre botões */ 
+} 
+/* Estilo das mensagens do sistema */ 
+.message { 
+padding: 10px; /* Espaçamento interno */ 
+margin: 10px 0; /* Margem acima e abaixo */ 
+border-radius: 5px; /* Bordas arredondadas */ 
+text-align: center; /* Texto centralizado */ 
+} 
+/* Estilo para mensagens de sucesso */ 
+.success { 
+background-color: #d4edda; /* Fundo verde claro */ 
+color: #155724; /* Texto verde escuro */ 
+border: 1px solid #c3e6cb; /* Borda verde */ 
+} 
+/* Estilo para mensagens de erro */ 
+.error { 
+background-color: #f8d7da; /* Fundo vermelho claro */ 
+color: #721c24; /* Texto vermelho escuro */ 
+border: 1px solid #f5c6cb; /* Borda vermelha */ 
+} 
+/* Classe para esconder elementos */ 
+.hidden { 
+display: none; /* Remove elemento do fluxo de exibição */ 
+} 

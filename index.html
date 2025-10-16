@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Controle de Aluguel de Livros</title> 
+    <!-- Link para o arquivo CSS --> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+    <!-- Container principal da aplicação --> 
+    <div class="container"> 
+        <!-- Título principal --> 
+        <h1>📚 Controle de Aluguel de Livros</h1> 
+         
+        <!-- Área para exibir mensagens do sistema --> 
+        <div id="message" class="message hidden"></div> 
+         
+        <!-- Seção do formulário para adicionar livros --> 
+        <section> 
+            <h2>Adicionar Novo Livro</h2> 
+            <!-- Formulário com id para referência no JavaScript --> 
+            <form id="bookForm"> 
+                <!-- Grupo do campo título --> 
+                <div class="form-group"> 
+                    <label for="title">Título do Livro:</label> 
+                    <input type="text" id="title" required> 
+                </div> 
+                 
+                <!-- Grupo do campo autor --> 
+                <div class="form-group"> 
+                    <label for="author">Autor:</label> 
+                    <input type="text" id="author" required> 
+                </div> 
+                 
+                <!-- Grupo do campo ano --> 
+                <div class="form-group"> 
+                    <label for="year">Ano de Publicação:</label> 
+                    <input type="number" id="year" min="1000" max="2023" required> 
+                </div> 
+                 
+                <!-- Botão para submeter o formulário --> 
+                <button type="submit">Adicionar Livro</button> 
+            </form> 
+        </section> 
+         
+        <!-- Seção que exibe a lista de livros --> 
+        <section> 
+            <h2>Biblioteca</h2> 
+            <!-- Lista onde os livros serão exibidos --> 
+            <ul id="bookList" class="book-list"> 
+                <!-- Os livros serão inseridos aqui via JavaScript --> 
+            </ul> 
+        </section> 
+    </div> 
+ 
+    <!-- Link para o arquivo JavaScript --> 
+    <script src="script.js"></script> 
+</body> 
+</html> 
